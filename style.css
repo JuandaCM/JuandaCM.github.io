@@ -6,40 +6,34 @@ body {
     line-height: 1.6;
 }
 
-
-header{
+header {
     display: flex;
     min-height: 95px;
     background-color: #0056b3;
     justify-content: space-between;
     align-items: center;
-    
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-.logo{
-
-display: flex;
-align-items: center;
+.logo {
+    display: flex;
+    align-items: center;
 }
- 
-.logo img{
+
+.logo img {
     margin-right: 5px;
     width: 50px;
     height: 50px;
     display: flex;
-    align-items:last baseline;
+    align-items: last baseline;
     justify-content: baseline;
-    position:relative;
-    display: flex;
+    position: relative;
     border-radius: 500px;
-    
 }
-
 
 header h1 {
     font-size: 2.5em;
@@ -67,7 +61,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-
 #hero {
     background: url('../images/hero.jpg') no-repeat center center/cover;
     color: white;
@@ -93,35 +86,23 @@ nav ul li a:hover {
     background: #0056b3;
 }
 
-
 #destinos {
     padding: 20px;
     text-align: center;
 }
 
-#sub1{
-    color:rgb(179, 118, 38)
+#sub1,
+#sub2,
+#sub3 {
+    color: rgb(179, 118, 38);
 }
 
-#sub2{
-    color:rgb(179, 118, 38)
-}
-
-#sub3{
-    color:rgb(179, 118, 38)
-}
-
-
-#p1{
-    color:rgb(134, 105, 67)
-}
-
-#lu{
-    color:rgb(134, 105, 67)
+#p1,
+#lu {
+    color: rgb(134, 105, 67);
 }
 
 .destino {
-    
     display: inline-block;
     width: 30%;
     margin: 10px;
@@ -132,7 +113,7 @@ nav ul li a:hover {
 }
 
 .destino img {
-   max-width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -147,9 +128,8 @@ nav ul li a:hover {
     color: #109e68;
 }
 
-
 #actividades {
-    background:  #43b8b8;
+    background: #43b8b8;
     padding: 20px;
     text-align: center;
 }
@@ -164,7 +144,6 @@ nav ul li a:hover {
     margin: 5px 0;
 }
 
-
 #reseñas {
     padding: 20px;
     background: rgb(136, 126, 114);
@@ -173,13 +152,9 @@ nav ul li a:hover {
 
 blockquote {
     font-style: italic;
-  
     padding: 10px 20px;
     margin: 10px 0;
 }
-
-
-
 
 footer {
     height: 375px;
@@ -189,7 +164,10 @@ footer {
     text-align: center;
 }
 
-form label, form input, form textarea, form button {
+form label,
+form input,
+form textarea,
+form button {
     display: block;
     width: 70%;
     margin: 5px auto;
@@ -209,11 +187,38 @@ form button:hover {
     background: #0056b3;
 }
 
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 0;
+    }
 
-@media screen and (max-width: 640px){
-    body{
+    .logo {
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
         font-size: 16px;
         color: #43b8b8;
     }
-    
 }
