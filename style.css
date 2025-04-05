@@ -9,7 +9,7 @@ body {
 
 header{
     display: flex;
-    min-height: 75px;
+    min-height: 95px;
     background-color: #0056b3;
     justify-content: space-between;
     align-items: center;
@@ -132,12 +132,13 @@ nav ul li a:hover {
 }
 
 .destino img {
-    width: 100%;
+   max-width: 100%;
     height: auto;
 }
 
 .destino h3 {
     color: #007bff;
+    display: block;
 }
 
 .destino p {
@@ -207,10 +208,12 @@ form button {
 form button:hover {
     background: #0056b3;
 }
-@media screen  and(max-width: 800px){
+
+
+@media screen and (max-width: 640px){
     body{
-         background-color: red;
+        font-size: 16px;
+        color: #43b8b8;
     }
     
 }
-
